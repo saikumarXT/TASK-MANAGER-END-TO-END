@@ -1,25 +1,24 @@
-const mongoose=require('mongoose');
+const mongoose = require('mongoose');
 const Schema=mongoose.Schema;
 const ObjectId = Schema.Types.ObjectId;
 
 
 const todoSchema = new Schema({
-    title:string,
-    completed:{type:Boolean, Default:false},
+    title:String,
+    completed:{type:Boolean, default:false},
     category:{
-    type:string,
+    type:String,
     enum:['fitness','personal','finance','work']
     },
-    createdAt:{type:string,Default:Date.now}
+    createdAt:{ type:Date, default:Date.now } 
 })
 
-const user=new Schema({
-    email:string,
-    password:string,
+const User = new Schema({
+    email:{type:String,unique:true},
+    password:{type:String, required:true, unique:true},
+    name:String,
     todos:[todoSchema]
 })
 
-const userModel=mongoose.model.user("people",user)
-module.exports({
-    userModel:userModel
-})
+const UserModel=mongoose.model("people",User)
+module.exports=UserModel;
