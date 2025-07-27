@@ -1,15 +1,14 @@
-const express = require('express');
-const mongoose = require('mongoose');
+const express=require('express');
 const app = express();
+const JWT_key='goggle-summer-of-code';
+const JWT=require('jsonwebtoken');
+
 
 app.use(express.json());
 
-// Sample route
-app.get('/', (req, res) => {
-  res.send('Server is running!');
-});
-
-// Start the server
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
-});
+app.post('/signup',(req,res)=>{
+    const email=req.body.email;
+    const password=req.body.password;
+    const name =req.body.name;
+    
+})
