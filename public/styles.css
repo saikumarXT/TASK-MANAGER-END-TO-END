@@ -1,0 +1,178 @@
+
+
+  body {
+    height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      background-color: blue;
+      background-image: url('images/white.jpg'); /* Replace with your image path */
+      background-size: cover;                 /* Makes the image cover the whole screen */
+      background-repeat: no-repeat;           /* Prevents tiling of the image */
+      background-position: center;   
+      
+  }
+
+
+    /* Overlay blur effect using backdrop-filter */
+    .main {
+    height: 70vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+
+ 
+
+}
+.work{
+    height: 35vh;
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border-radius: 20px;
+    padding: 40px;  
+    text-align: center;
+    color: rgb(0, 0, 0);
+     border: 0px black solid;
+     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
+      margin: 20px  ;
+      cursor: pointer;
+      background-color: white;
+}
+
+    .fitness{
+    height: 35vh;
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border-radius: 20px;
+    padding: 40px;  
+    text-align: center;
+    color: rgb(0, 0, 0);
+     border: 0px black solid;
+     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
+      margin: 20px  ;
+      cursor: pointer;
+        background-color: white;
+}
+    .finance{
+   height: 35vh;
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border-radius: 20px;
+    padding: 40px;  
+    text-align: center;
+    color: rgb(0, 0, 0);
+     border: 0px black solid;
+     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
+      margin: 20px  ;
+      cursor: pointer;
+        background-color: white;
+        }
+
+    .personal{
+      height: 35vh;
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border-radius: 20px;
+    padding: 40px;  
+    text-align: center;
+    color: rgb(0, 0, 0);
+     border: 0px black solid;
+     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
+      margin: 20px  ;
+      cursor: pointer;
+        background-color: white;
+      }
+  
+    .top-1{
+     padding-bottom: 0px;
+      height: 32vh;
+
+    }
+    .code{
+        padding-top: 25px;
+        width: 190px;
+        height:30vh;
+    }
+
+  
+     .top-2{
+       padding-bottom: 0px;
+       height: 32vh;
+
+     }
+
+     .fit{
+        width: 150px; 
+         height:30vh;
+        padding-top: 10px;
+ }
+
+    .top-3{
+       height: 32vh;
+      
+    }
+
+     .fin{
+        width: 150px;
+        height:30vh;
+         padding-top: 20px;
+     }
+  
+
+     .top-4{
+          height: 32vh;
+     }
+        
+     .per{
+       width: 190px;
+        height:26vh;
+        padding-top: 25px;
+     }
+
+.bottom{    
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: rgb(0, 83, 250);
+      
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 3px;
+      border:none;
+}
+.header{
+  margin: 20px;
+  border: 0px black solid;
+    box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height:8vh;
+      letter-spacing: 15px;
+      word-spacing:30px;
+      color: rgb(0, 136, 255);
+      text-shadow: 0 0 0px rgba(255, 255, 255, 0.6);
+        background-color: white;
+}
+.footer{
+
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+  height:15vh;
+ 
+}
+.copy-right{
+
+
+}
+.quote{
+
+}
+.logos{
+
+}
+

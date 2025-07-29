@@ -4,6 +4,7 @@ const ObjectId = Schema.Types.ObjectId;
 
 
 const todoSchema = new Schema({
+    todoNum:Number,
     title:String,
     completed:{type:Boolean, default:false},
     category:{
@@ -15,7 +16,7 @@ const todoSchema = new Schema({
 
 const User = new Schema({
     email:{type:String,unique:true},
-    password:{type:String, required:true, unique:true},
+    password:{type:String, required:true, unique:false},
     name:String,
     todos:[todoSchema]
 })

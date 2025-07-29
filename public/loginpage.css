@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(243, 236, 226);
+
+    }
+
+    .main-content{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.card{
+    height: 30vh;
+    background: rgba(255, 255, 255, 0.1); /* transparent white */
+    border-radius: 20px;
+    padding: 40px;  
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: 0px black solid;
+    box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
+    margin-top: 120px  ;
+    cursor: pointer;
+    background-color: white;
+    width: 400px;
+    }
+
+.inputs{
+display: grid;
+align-items: center;
+padding: 8px;
+justify-content: center;
+} 
+.email{
+width: 390px;
+height: 3vh;
+padding: 8px;
+}
+.password{
+width: 390px;
+height: 3vh;
+padding: 8px;
+}
+.name{
+width: 390px;
+height: 3vh;
+padding: 8px;
+}
+.login-buttons{
+padding-top: 20px;
+}
+
+button{
+width: 180px;
+background-color: rgb(214, 61, 61);
+color: black;
+font-size: larger;
+cursor: pointer;
+}
+.login-status{
+ width: 350px;
+}
