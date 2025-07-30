@@ -9,7 +9,7 @@ const token=localStorage.getItem('token');
         console.log(token);
 
 const title = document.querySelector('.todoInput').value;
-const response = await axios.post("http://localhost:3005/todo",{
+const response = await axios.post("http://localhost:3006/todo",{
     title:title,
     category:category },{
         headers:{
@@ -19,8 +19,9 @@ const response = await axios.post("http://localhost:3005/todo",{
 const data=response.data;
 
 if(data){
-    document.querySelector('.todo-view').textContent=data.message;
-}
+    console.log(data.message)}
+
+
 await render(category);
 }
 
@@ -33,34 +34,35 @@ const token=localStorage.getItem('token');
         alert("No token found. Please login again.");
         return;}
 
-const res= await axios.post("http://localhost:3005/todos",{
+const res= await axios.post("http://localhost:3006/todos",{
 
 category:category},{
 headers:{token:token}
 })
 let html="";
-const todoData =res.data.todos; 
-
+const todoData =await res.data.todo; 
+ console.log(todoData);
 todoData.forEach(todo=>{
-html= html+`<p>${todo.title}
-<button onclick='deleteTodo("${todo.todoNum}","${todo.category}")'>delete</button> </p>`})
+html= html+`<div class='todo-div'><p>${todo.title}</p>
+<button onclick='deleteTodo("${todo._id}","${todo.category}")'class='delete-button'>DELETE</button>
+</div>`
+})
 document.querySelector('.todos-list').innerHTML=html;
 }
 
 
 
 
-async function deleteTodo(todoNum,category){
+async function deleteTodo(id,category){
 const token=localStorage.getItem('token');
     if (!token) {
         alert("No token found. Please login again.");
         return;}
-    const response = await axios.delete("http://localhost:3005/deleteTodo",{
-    data:{todoNum:Number(todoNum)},
-    headers:{token:token}
+    const response = await axios.post('http://localhost:3006/deleteTodo',{
+        todoNum:id},
+       {headers:{token:token}
 })
     const data=response.data;
-    alert(data.message);
    await render(category);
 
  }

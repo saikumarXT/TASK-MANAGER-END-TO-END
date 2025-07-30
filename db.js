@@ -4,7 +4,6 @@ const ObjectId = Schema.Types.ObjectId;
 
 
 const todoSchema = new Schema({
-    todoNum:Number,
     title:String,
     completed:{type:Boolean, default:false},
     category:{

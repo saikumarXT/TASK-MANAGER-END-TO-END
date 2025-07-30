@@ -3,7 +3,7 @@ async function signup(){
     const password = document.querySelector('.password').value;
      const name= document.querySelector('.name').value;
       
-   const response = await axios.post('http://localhost:3005/signup',{
+   const response = await axios.post('http://localhost:3006/signup',{
         email:email,
         password:password,
         name:name
@@ -16,7 +16,7 @@ async function signin (){
         const email = document.querySelector('.email').value;
         const password = document.querySelector('.password').value;
         const name= document.querySelector('.name').value;
-        const response = await axios.post("http://localhost:3005/signin",{
+        const response = await axios.post("http://localhost:3006/signin",{
         email:email,
         password:password,
         name:name})

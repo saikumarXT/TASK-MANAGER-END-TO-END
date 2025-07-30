@@ -84,9 +84,8 @@ try{
     const user = await UserModel.findOne({
         _id:userId })
         if(user){
-        const count=user.todos.length + 1;
+
         user.todos.push({
-            todoNum:count+1,
             title:title,
             category:category,
             completed:true
@@ -114,9 +113,9 @@ app.post('/todos',auth,async function (req,res){
     const user =await UserModel.findOne({
         _id:userId
     })
-   const todos = user.todos.filter(hello => hello.category === category);
+   const todo = user.todos.filter(hello => hello.category === category);
     res.json({
-        todos:todos})
+        todo:todo})
 }
     catch(err){
     res.json({
@@ -126,21 +125,16 @@ app.post('/todos',auth,async function (req,res){
 })
 
 
-app.delete('/deleteTodo',auth,async function(req, res){
+app.post('/deleteTodo', auth , async function(req, res){
     const userId = req.userId;
-    const todoNum=req.body.todoNum;
+    const todoId=req.body.todoNum;
     try{
     const user=await UserModel.findOne({
         _id:userId
     })
     if(user){
-        const todoLength=await user.todos.length;
-        user.todos=await user.todos.filter(todo => todo.todoNum!==todoNum);
-        if(todoLength === user.todos.length){
-            res.json({
-                message:"todo not-deleted"
-            })}
-            else{
+        user.todos= await user.todos.filter(todo => todo._id.toString()!==todoId.toString());
+        if(user.todos){
             await user.save();
             res.json({
                 message:"Todo successfully-Deleted" })
@@ -153,19 +147,6 @@ app.delete('/deleteTodo',auth,async function(req, res){
         })
       }
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -183,5 +164,5 @@ async function auth(req,res,next){
     message:err.message})
     }
 }
-app.listen(3005, () => 
-console.log('Server running on http://localhost:3005'));
+app.listen(3006, () => 
+console.log('Server running on http://localhost:3006'));
