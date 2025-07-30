@@ -1,10 +1,10 @@
 ## 📸 Screenshots
 
 ### 🔐 Login Page
-![Login](public/images/login-page.png)
+![Login](public/images/loginpage.png)
 
 ### 🏠 Home Page
-![Home](public/images/home-page.png)
+![Home](public/images/homepage.png)
 
 ### 📊 Dashboard View
 ![Dashboard](public/images/work-page.png)
