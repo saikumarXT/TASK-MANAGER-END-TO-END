@@ -14,25 +14,22 @@ body {
 
 
 .header-TODO{
-  width: 100%;
-  padding-left:200px; 
-  padding-right: 200px;
-  margin: 10px;
-  margin-top:30px;
-  border: 0px black solid;
-  box-shadow: 5px 5px 15px  3PX  rgba(0, 0, 0, 0.25);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-size: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:8vh;
-  letter-spacing: 15px;
-  word-spacing:30px;
-  color: rgb(0, 136, 255);
-  text-shadow: 0 0 0px rgba(255, 255, 255, 0.6);
-  background-color: white;
+  width: 1250px;
+    margin: 20px;
+    border: 1px rgb(215, 194, 194) solid;
+    box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height:8vh;
+      letter-spacing: 15px;
+      word-spacing:30px;
+       color: #11e3c7; 
+      text-shadow: 0 0 0px rgba(255, 255, 255, 0.6);
+        background-color: white;
   }
 
 
@@ -51,7 +48,7 @@ body {
 
 }
 .todoInput{
-  width: 460px;
+  width: 629px;
   height: 25px;
     padding-left: 32px;
       font-size: larger;
@@ -72,8 +69,8 @@ letter-spacing: 2px;
   margin-bottom:25px;
 }
 p{
-
-  width: 476px;
+  display:flex;
+  width: 646px;
   height: 30px;
   margin:0px;
   box-shadow: 4px 4px 15px 2px rgba(0, 0, 0, 0.25);
@@ -99,5 +96,3 @@ background-color: rgb(255, 255, 255);
      border: none;
     font-size: larger;
 }
-
-

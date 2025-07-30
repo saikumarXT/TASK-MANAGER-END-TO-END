@@ -10,7 +10,7 @@ justify-content: center;
 }
 
 .card{
-    height: 30vh;
+    height: 35vh;
     background: rgba(255, 255, 255, 0.1); /* transparent white */
     border-radius: 20px;
     padding: 40px;  
@@ -23,7 +23,14 @@ justify-content: center;
     background-color: white;
     width: 400px;
     }
-
+.title{
+    font-family: 'Times New Roman', Times, serif;
+word-spacing: 2px;
+letter-spacing: 2px;
+font-weight: bold;
+margin-top: 0px;
+padding-bottom: 10px;
+}
 .inputs{
 display: grid;
 align-items: center;
@@ -51,11 +58,16 @@ padding-top: 20px;
 
 button{
 width: 180px;
-background-color: rgb(214, 61, 61);
+background-color: rgb(113, 184, 32);
 color: black;
 font-size: larger;
 cursor: pointer;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font: bold;
+border: none;
 }
 .login-status{
  width: 350px;
+ padding-left: 20px;
+color: black;
 }

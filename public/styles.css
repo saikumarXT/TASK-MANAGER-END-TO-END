@@ -4,11 +4,10 @@
     height: 100vh;
       margin: 0;
       padding: 0;
-      background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
-      background-color: blue;
-      background-image: url('images/white.jpg'); /* Replace with your image path */
+      background-color: rgb(255, 255, 255);
+     /* Replace with your image path */
       background-size: cover;                 /* Makes the image cover the whole screen */
       background-repeat: no-repeat;           /* Prevents tiling of the image */
       background-position: center;   
@@ -27,60 +26,19 @@
  
 
 }
-.work{
+.work,.fitness,.finance,.personal{
     height: 35vh;
     background: rgba(255, 255, 255, 0.1); /* transparent white */
     border-radius: 20px;
     padding: 40px;  
     text-align: center;
-    color: rgb(0, 0, 0);
-     border: 0px black solid;
+     border: 1px rgb(215, 194, 194) solid;
      box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
       margin: 20px  ;
       cursor: pointer;
       background-color: white;
 }
 
-    .fitness{
-    height: 35vh;
-    background: rgba(255, 255, 255, 0.1); /* transparent white */
-    border-radius: 20px;
-    padding: 40px;  
-    text-align: center;
-    color: rgb(0, 0, 0);
-     border: 0px black solid;
-     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
-      margin: 20px  ;
-      cursor: pointer;
-        background-color: white;
-}
-    .finance{
-   height: 35vh;
-    background: rgba(255, 255, 255, 0.1); /* transparent white */
-    border-radius: 20px;
-    padding: 40px;  
-    text-align: center;
-    color: rgb(0, 0, 0);
-     border: 0px black solid;
-     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
-      margin: 20px  ;
-      cursor: pointer;
-        background-color: white;
-        }
-
-    .personal{
-      height: 35vh;
-    background: rgba(255, 255, 255, 0.1); /* transparent white */
-    border-radius: 20px;
-    padding: 40px;  
-    text-align: center;
-    color: rgb(0, 0, 0);
-     border: 0px black solid;
-     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
-      margin: 20px  ;
-      cursor: pointer;
-        background-color: white;
-      }
   
     .top-1{
      padding-bottom: 0px;
@@ -132,8 +90,7 @@
       font-family: 'Poppins', sans-serif;
       font-size: 1.8rem;
       font-weight: 600;
-      color: rgb(0, 83, 250);
-      
+     color: #00BFA6;
       text-align: center;
       display: flex;
       align-items: center;
@@ -143,36 +100,49 @@
 }
 .header{
   margin: 20px;
-  border: 0px black solid;
+    border: 1px rgb(215, 194, 194) solid;
     box-shadow: 5px 5px 5px 5PX rgba(235, 212, 212, 0.8);
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 32px;
     display: flex;
-    align-items: center;  
+    align-items: center;
     justify-content: center;
       height:8vh;
       letter-spacing: 15px;
       word-spacing:30px;
-      color: rgb(0, 136, 255);
+     color: #11e3c7; 
       text-shadow: 0 0 0px rgba(255, 255, 255, 0.6);
         background-color: white;
 }
 .footer{
-
  display: grid;
  grid-template-columns: 1fr 1fr 1fr;
   height:15vh;
- 
+  margin-top: 48px;
+ color: #555555;
+font-size: large;
 }
 .copy-right{
-
-
+font-family: monospace;
+margin-left: 20px;
+font-weight: bold;
 }
 .quote{
+font-family: monospace;
+padding-left: 40px;
+font-weight: bold;
+}
+.logo{
+font-family: monospace;
+padding-left: 220px;
+}
+
+.logo-img{
+width: 20px;
+height: 20px;
+margin: 15px;
+margin-top: 0px;
+margin-right: 8px;
 
 }
-.logos{
-
-}
-
