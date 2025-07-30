@@ -1,3 +1,23 @@
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login](public/images/login-page.png)
+
+### 🏠 Home Page
+![Home](public/images/home-page.png)
+
+### 🧾 Dashboard View
+![Work Page](public/images/work-page.png)
+
+### ✅ Tasks Page (Fitness)
+![Fitness](public/images/fitness-page.png)
+
+### ✅ Tasks Page (Finance)
+![Finance](public/images/finance-page.png)
+
+### ✅ Tasks Page (Personal)
+![Personal](public/images/personal-page.png)
+
 # 🧠 Task Manager – End-to-End MERN To-Do Tracker
 
 A full-stack task management web app built with **Node.js**, **MongoDB**, and **Vanilla JS** that helps users track tasks across four key life areas: **Work**, **Fitness**, **Finance**, and **Personal**. The app includes user authentication, protected routes, and persistent todo storage.
